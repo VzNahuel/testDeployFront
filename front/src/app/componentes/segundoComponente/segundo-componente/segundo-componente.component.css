@@ -1,0 +1,20 @@
+h2{
+    margin-top: 20px;
+}
+
+section{
+    margin: 10px;
+}
+
+.borde{
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.rojo{
+    background-color: indianred;
+}
+
+.teal{
+    background-color: teal;
+}

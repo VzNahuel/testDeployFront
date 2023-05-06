@@ -1,0 +1,14 @@
+.borde{
+    border-radius: 5px;
+    border-style: solid;
+    background-color: indianred;
+}
+
+.dot{
+    list-style-type: disc;
+    margin: 0;
+}
+
+li{
+    margin: 10px auto;
+}
