@@ -29,7 +29,7 @@
             <b>Ejemplo con <span class="textRojo">[(ngModel)]</span></b>
             <p>Ingrese su nombre:</p>
             <div>
-                Nombre:<input placeholder="Nombre" type="text" [(ngModel)]="nombre"/>
+                Nombre:<input type="text" [(ngModel)]="nombre"/>
             </div>
 
             <div>
@@ -74,7 +74,16 @@
         </section>
 
         <section class="borde">
-            <h3>Ejemplo con event¿?</h3>
+            <h3>Ejemplo con <span class="textRojo">ngModelChange</span></h3>
+
+            <p>Desafortunadamente, es lo mismo que con (ngModel)...</p>
+            <p>Una relacion de dependencia</p>
+
+            <div>
+                DNI:<input type="text" [ngModel]="dni" (ngModelChange)="cambiaDni($event)"/>
+            </div>
+
+            <div>Tú dni es: <b>{{dni}}</b></div>
         </section>
 
         <section class="borde">

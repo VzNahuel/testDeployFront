@@ -9,9 +9,13 @@ export class TercerComponenteComponent {
   //ngModel se encargara de cambiar este valor
   nombre: string = "";
 
-  agregado: string = "";
+  //Tuve que hacer que reciba texto, marcar dni como undefined, y parsear...
+  //Pero ahora "funciona"
+  dni: number | undefined;
 
-  productos: string[] = ["Coca1L", "Galletas", "Chocolate"];
+  cambiaDni(valor: string) {
+    this.dni = parseInt(valor);
+  }
 
   //onClick NO me deja crear variables dentro. Solo puedo operar parametros...
   // y tal vez usar variables GLOBALES (ej: this.nombre)
