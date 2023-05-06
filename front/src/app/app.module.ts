@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { PrimerComponenteComponent } from './componentes/primerComponente/primer-componente/primer-componente.component';
 import { SegundoComponenteComponent } from './componentes/segundoComponente/segundo-componente/segundo-componente.component';
 import { CompPersonaComponent } from './componentes/compPersona/comp-persona/comp-persona.component';
+import { TercerComponenteComponent } from './componentes/tercerComponente/tercer-componente/tercer-componente.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimerComponenteComponent,
     SegundoComponenteComponent,
-    CompPersonaComponent
+    CompPersonaComponent,
+    TercerComponenteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

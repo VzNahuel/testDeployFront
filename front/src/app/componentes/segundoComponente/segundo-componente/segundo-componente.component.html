@@ -1,10 +1,74 @@
-<h2>Este componente tendra ejemplos de Binding</h2>
+<h2>Este componente tendra ejemplos de Directivas Estructurales</h2>
 
 <main class="borde rojo">
     <section class="borde teal">
-        
-        <h3>Ejemplo de ngIf o ngFor o algo noseee</h3>
-        
-        <p>lorenzo</p>
+        <h3>Ejemplo de expresiones usando llaves</h3>
+       
+        <p>En la logica tengo una funcion "holaMundo" la cual llamare por expresion</p>
+
+        <p>Saludar: {{holaMundo()}}</p>
+
+        <p>Tambien tengo un registro en el cual mostrare los campos por exp</p>
+
+        <p>Me llamo: {{registro.nombre}}; y mi dni es: {{registro.dni}}</p>
     </section>
+
+    <section class="borde amarillo">
+        <h3>Uso de <span class="textAzul">*ngIf</span></h3>
+
+        
+        <p>¿Puedo entrar a Sasha?
+            <!--LLamado al If-->
+            <span *ngIf="bandera"></span>
+        </p>
+
+        <div *ngIf="bandera;then entra else no_entra"></div>
+        <ng-template #entra>    <b>Pase Raey</b>        </ng-template>
+        <ng-template #no_entra> <b>No pasas papu</b>    </ng-template>
+
+        <p>Por lo tanto el valor de la bandera es: <b>{{bandera}}</b></p>
+    </section>
+
+    <section class="borde aquamarine">
+        <h3>Uso de <span class="textAzul">*ngFor</span></h3>
+
+        <p>Tengo esta lista en mi logica (mostrada por expresion): {{productos}}</p>
+
+        <p>Creare un elemento de la lista por producto:</p>
+        <ul>
+            <!--
+                Si mi intencion es crear muchos "li" entonces el For va en la
+                etiqueta "li"
+            -->
+            <li *ngFor="let producto of productos">
+                {{producto}}
+            </li>
+        </ul>
+    </section>
+
+    <section class="borde forest">
+        <h3>Uso de <span class="textAzul">ngSwitch</span></h3>
+
+        <p>Antes de arrancar, el ngSwitch usa <b>"*" y "[]"</b></p>
+
+        <p>Tengo una lista con los miembros de un grupo.</p>
+        <p>Voy a usar un switch para elegir la mejor.</p>
+
+        <p><b>Importante!</b> Cuando compare los elementos tienen que tener la siguiente sintaxis:</p>
+        <p>*ngSwitchCase="  '   nombre  '   "</p>
+
+        <ul [ngSwitch]="best">
+            <li *ngSwitchCase="'Payton'">La mejor es Payton</li>
+            <li *ngSwitchCase="'Liyuu'">La mejor es Liyuu</li>
+            <li *ngSwitchCase="'Date'">La mejor es Date</li>
+            <li *ngSwitchCase="'Nako'">La mejor es Nako</li>
+            <li *ngSwitchCase="'Nagi'">La mejor es Nagi</li>
+            <li *ngSwitchDefault>Laughlol</li>
+        </ul>
+    </section>
+
+    <b>En resumen:</b>
+    <p>Las directivas estructurales me permiten<b>crear etiquetas</b>y<b>enlazar la logica con la vista</b></p>
+    
+
 </main>

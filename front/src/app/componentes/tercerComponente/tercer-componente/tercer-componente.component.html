@@ -1,0 +1,84 @@
+<h2>Este componente tendra ejemplos de Directivas de Binding</h2>
+
+<main class="borde rojo">
+    <b>Introduccion:</b>
+
+    <p>El binding es "comunicacion" entre "vista" y "logica(.ts)"</p>
+
+    <p>Nos permite pasar información al archivo TypeScript dada por el usuario al
+    hacer click en un botón, cambiar un menú, completar un input, etc.</p>
+
+    <p>Es lo que se conoce como <b>"reaccionar a eventos del usuario".</b></p>
+
+    <b>Targets de un binding</b>
+
+    <ul>
+        <li>() para enlazar del DOM al componente.</li>
+        <li>[] para enlazar desde el componente al DOM.</li>
+        <li>[()] para enlazar en ambos sentidos.</li>
+    </ul>
+
+    <h2>Importante!</h2>
+
+    <p>Antes de hacer "ngModel" hay que importar "FormsModule" en el archivo <b>app.module.ts</b></p>
+
+    <section class="borde cielo">
+        <section class="borde">
+            <h3>Ejemplo con input "nombre"</h3>
+
+            <b>Ejemplo con <span class="textRojo">[(ngModel)]</span></b>
+            <p>Ingrese su nombre:</p>
+            <div>
+                Nombre:<input placeholder="Nombre" type="text" [(ngModel)]="nombre"/>
+            </div>
+
+            <div>
+                Tú nombre es: <b>{{nombre}}</b> y tiene {{nombre.length}} <b>letras</b>.
+            </div>
+
+            <p>
+                Con esto practicamente puedo <b>modificar dinamicamente</b>
+                a mis variables dentro de la logica...
+            </p>
+
+            <p>
+                El problema es que no tengo un <b>evento interactivo</b> que me
+                permita realizar la asignacion de nuevos datos... aun...
+            </p>
+
+            <p>
+                Lo que busco es: "Voy a ingresar un valor en el input. Una vez
+                que presione el boton, lo que sea que este en el input ira
+                directo a una variable en mi logica"
+            </p>
+
+            <p>
+                Lo que esto hace es: "Hay una relacion de dependencia entre la vista
+                y la logica. En el instante que modifique el input, ya esta.
+                Valor nuevo para la variable con la que esta unida y listo"
+            </p>
+
+        </section>
+
+        <section class="borde">
+            <h3>Ejemplo de boton con <span class="textRojo">(click)</span></h3>
+
+            <p>
+                El principal problema es que (click), al menos en el curso,
+                no permite enviar datos a la logica (o yo nose como hacerlo...)
+            </p>
+
+            <button (click)="onClick()">Haceme click!</button>
+
+            <p>En este caso solo da un "alert"</p>
+        </section>
+
+        <section class="borde">
+            <h3>Ejemplo con event¿?</h3>
+        </section>
+
+        <section class="borde">
+            <h3>Ejemplo con noseque</h3>
+        </section>
+    </section>
+</main>
