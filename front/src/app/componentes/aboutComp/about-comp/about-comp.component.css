@@ -1,0 +1,15 @@
+.borde{
+    margin: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: yellow;
+}
+
+.textRojo{
+    color: red;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}

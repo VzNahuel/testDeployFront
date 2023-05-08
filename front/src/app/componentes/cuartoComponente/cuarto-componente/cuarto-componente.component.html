@@ -1,0 +1,58 @@
+<h2>Aqui vemos "Routing"</h2>
+
+<main class="borde rojo">
+    <section class="borde naranja">
+        <h3>Uso de propiedad "routerLink" y etiqueta <b>"router-outlet"</b></h3>
+
+        <p>Hay una serie de pasos a seguir:</p>
+
+        <ol>
+            <li>Se creo el componente "about" para hacer la vista del "acerca de"</li>
+
+            <li>Se realiza el import de "aboutComp" en el "routingModule.ts</li>
+            <p>Puedo buscar su "nombre de import" y ubicacion desde "appModule.ts</p>
+
+            <li>Agrego el 'path' y el componente correspondiente</li>
+            <b>Con esto, el routing esta completo</b>
+
+            <li>Luego creo un enlace con la propiedad <b>routerLink</b></li>
+
+            <li>El valor del router debe ser el mismo que se uso en 'path'</li>
+
+            <li>Finalmente, la etiqueta "router outlet" tomara la vista de mi componente</li>
+        </ol>
+
+        <a routerLink="sobre-nosotros">Ir al "About"</a>
+
+        <router-outlet></router-outlet>
+
+    </section>
+
+    <section class="borde">
+        <h2>Pagina 404</h2>
+
+        <p>Con lo anterior podemos facilmente realizar una redireccion a la pagina 404</p>
+
+        <p>
+            Por ahora lo unico que me interesa es saber como <b>ocultar el contenido 
+            original</b> para mostrar solo la pagina 404.
+        </p>
+
+        <p>
+            Aparentemente hay diferencia entre agregar 404 al inicio del array
+            de rutas que al final...
+        </p>
+    </section>
+
+    <section class="borde beige">
+        <h2>Rutas por defecto</h2>
+
+        <p>Por ahora no le doy importancia...</p>
+
+        
+    </section>
+
+    <section class="borde">
+        <h2>Rutas con partes dinamicas (Jugador/Oliver - Jugador/Benji)</h2>
+    </section>
+</main>

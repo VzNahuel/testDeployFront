@@ -1,0 +1,20 @@
+section{
+    margin: 10px;
+}
+
+.borde{
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.rojo{
+    background-color: indianred;
+}
+
+.naranja{
+    background-color: coral;
+}
+
+.beige{
+    background-color: beige;
+}

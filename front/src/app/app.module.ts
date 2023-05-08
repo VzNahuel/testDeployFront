@@ -7,7 +7,15 @@ import { PrimerComponenteComponent } from './componentes/primerComponente/primer
 import { SegundoComponenteComponent } from './componentes/segundoComponente/segundo-componente/segundo-componente.component';
 import { CompPersonaComponent } from './componentes/compPersona/comp-persona/comp-persona.component';
 import { TercerComponenteComponent } from './componentes/tercerComponente/tercer-componente/tercer-componente.component';
-import { FormsModule } from '@angular/forms';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { CuartoComponenteComponent } from './componentes/cuartoComponente/cuarto-componente/cuarto-componente.component';
+import { AboutCompComponent } from './componentes/aboutComp/about-comp/about-comp.component';
+import { QuintoComponenteComponent } from './componentes/quintoComponente/quinto-componente/quinto-componente.component';
+import { LoginCompComponent } from './componentes/loginComp/login-comp/login-comp.component';
+
+
 
 @NgModule({
   declarations: [
@@ -15,12 +23,17 @@ import { FormsModule } from '@angular/forms';
     PrimerComponenteComponent,
     SegundoComponenteComponent,
     CompPersonaComponent,
-    TercerComponenteComponent
+    TercerComponenteComponent,
+    CuartoComponenteComponent,
+    AboutCompComponent,
+    QuintoComponenteComponent,
+    LoginCompComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
